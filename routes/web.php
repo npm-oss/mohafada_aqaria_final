@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NegativeCertificateController; 
 use App\Http\Controllers\Admin\NegativeCertificateAdminController;
-use App\Http\Controllers\Admin\documentsAdminController;
+use App\Http\Controllers\Admin\DocumentsAdminController;
 use App\Http\Controllers\RequestController;
 
 use App\Http\Controllers\DocumentSearchController;

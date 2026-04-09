@@ -23,15 +23,16 @@ WORKDIR /app
 # نسخ جميع ملفات المشروع إلى الحاوية
 COPY . .
 
-# إعداد ملف البيئة وتثبيت المكتبات
+# إعداد ملف البيئة والمجلدات وقاعدة البيانات
 RUN cp .env.example .env \
+    && mkdir -p database \
+    && touch database/database.sqlite \
+    && mkdir -p storage/framework/{sessions,views,cache} \
+    && chmod -R 777 storage bootstrap/cache \
     && composer install --no-dev --optimize-autoloader
 
-# إعداد المجلدات وقاعدة البيانات
-RUN mkdir -p storage/framework/{sessions,views,cache} \
-    && chmod -R 777 storage bootstrap/cache \
-    && touch database/database.sqlite \
-    && php artisan key:generate --force
+# التحضير النهائي
+RUN php artisan key:generate --force
 
 # إعداد المتغيرات البيئية الافتراضية
 ENV PORT=8080
