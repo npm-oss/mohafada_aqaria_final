@@ -23,18 +23,21 @@ WORKDIR /app
 # نسخ جميع ملفات المشروع إلى الحاوية
 COPY . .
 
-# تثبيت مكتبات Composer وتحسين المسار التلقائي
-RUN composer install --no-dev --optimize-autoloader
+# إعداد ملف البيئة وتثبيت المكتبات
+RUN cp .env.example .env \
+    && composer install --no-dev --optimize-autoloader
 
-# إعداد ملفات البيئة والمجلدات
-RUN chmod -R 777 storage bootstrap/cache \
-    && touch database/database.sqlite
+# إعداد المجلدات وقاعدة البيانات
+RUN mkdir -p storage/framework/{sessions,views,cache} \
+    && chmod -R 777 storage bootstrap/cache \
+    && touch database/database.sqlite \
+    && php artisan key:generate --force
 
 # إعداد المتغيرات البيئية الافتراضية
 ENV PORT=8080
+ENV APP_ENV=production
+ENV APP_DEBUG=false
 EXPOSE 8080
 
-# تنفيذ الأوامر عند بدء التشغيل: 
-# 1. المهاجرات لتجهيز الجداول
-# 2. تشغيل التطبيق على المنفذ المطلوب
+# تنفيذ الأوامر عند بدء التشغيل
 CMD php artisan migrate --force --seed && php artisan serve --host=0.0.0.0 --port=$PORT
