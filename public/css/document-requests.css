@@ -1,0 +1,125 @@
+/* Container الصفحة */
+.document-requests-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* عنوان الصفحة */
+.requests-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1e3a8a; /* أزرق غامق */
+}
+
+/* رسالة لا توجد طلبات */
+.no-requests {
+    font-size: 1.1rem;
+    color: #6b7280; /* رمادي */
+}
+
+/* جدول الطلبات */
+.requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.requests-table thead th {
+    background-color: #1e40af; /* أزرق غامق */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.requests-table tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.requests-table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* الحالة */
+.badge {
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.badge.approved {
+    background-color: #16a34a; /* أخضر */
+    color: #ffffff;
+}
+
+.badge.rejected {
+    background-color: #dc2626; /* أحمر */
+    color: #ffffff;
+}
+
+.badge.pending {
+    background-color: #facc15; /* أصفر */
+    color: #1f2937; /* غامق */
+}
+
+/* أزرار الإجراءات */
+.actions-cell .btn {
+    margin: 2px 2px 2px 0;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* نوع كل زر */
+.view-btn {
+    background-color: #3b82f6; /* أزرق فاتح */
+    color: white;
+}
+.view-btn:hover {
+    background-color: #2563eb;
+}
+
+.approve-btn {
+    background-color: #16a34a; /* أخضر */
+    color: white;
+}
+.approve-btn:hover {
+    background-color: #15803d;
+}
+
+.reject-btn {
+    background-color: #dc2626; /* أحمر */
+    color: white;
+}
+.reject-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* الفورم في السطر */
+.inline-form {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+

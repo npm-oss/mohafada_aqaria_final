@@ -1,0 +1,58 @@
+@extends('layouts.app')
+
+@php
+    $hideNavbar = true;
+@endphp
+
+@section('content')
+<link rel="stylesheet" href="{{ asset('css/extract-topographic.css') }}">
+
+<div class="extract-container">
+
+    <div class="extract-card">
+
+        <!-- HEADER -->
+        <div class="card-header">
+            <button class="search-btn">Recherche</button>
+            <h3>بطاقات العقارات غير الممسوحة</h3>
+            <a href="{{ route('home') }}" class="close-btn">✖</a>
+        </div>
+
+        <p class="note">──── معلومات العقار ────</p>
+
+        <form>
+
+            <div class="form-grid">
+
+                <div>
+                    <label>COMMUNE</label>
+                    <input type="text" placeholder="البلدية">
+                </div>
+
+                <div>
+                    <label>SECTION</label>
+                    <input type="text" placeholder="القسم">
+                </div>
+
+                <div>
+                    <label>NUMERO</label>
+                    <input type="text" placeholder="رقم العقار">
+                </div>
+
+                <div>
+                    <label>OBSERVATION</label>
+                    <input type="text" placeholder="ملاحظات">
+                </div>
+
+            </div>
+
+            <div class="submit-box">
+                <button type="submit">📄 بحث</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+@endsection

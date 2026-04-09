@@ -1,0 +1,150 @@
+/* ===== Animations ===== */
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 rgba(201,162,77,0.4); }
+    50% { box-shadow: 0 0 25px rgba(201,162,77,0.7); }
+    100% { box-shadow: 0 0 0 rgba(201,162,77,0.4); }
+}
+
+/* ===== Container ===== */
+.page-process .extract-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: "Cairo", sans-serif;
+    animation: fadeSlide 0.8s ease;
+}
+
+/* ===== Main Card ===== */
+.page-process .extract-card {
+    background: #fff8f1; /* خلفية فاتحة فخمة */
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 35px 70px rgba(201,162,77,.25); /* ظل فاخر */
+    animation: fadeSlide 1s ease;
+    color: #111827;
+    margin-bottom: 30px;
+}
+
+/* ===== Card Title ===== */
+.page-process .extract-card h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #c2872b; /* ذهب غني */
+    margin-bottom: 25px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* ===== Form Grid ===== */
+.page-process .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.page-process .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-process .row label {
+    font-weight: 600;
+    color: #4b4b4b;
+    margin-bottom: 8px;
+}
+
+.page-process input,
+.page-process select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    background-color: #fffdf5; /* فاتحة فخمة */
+    color: #111827;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(201,162,77,0.2);
+}
+
+.page-process input:focus,
+.page-process select:focus {
+    outline: none;
+    border-color: #c9a24d;
+    box-shadow: 0 0 18px rgba(201,162,77,.6);
+    transform: scale(1.04);
+}
+
+/* ===== Top Actions Buttons ===== */
+.page-process .top-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+}
+
+.page-process .top-actions button,
+.page-process .top-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(201,162,77,.35);
+    transition: all 0.3s ease;
+    color: #1f2937;
+    background: linear-gradient(135deg, #f6d365, #fda085); /* ألوان ذهبية حية */
+}
+
+/* Hover Effects */
+.page-process .top-actions button:hover,
+.page-process .top-actions a:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 20px 45px rgba(201,162,77,.6);
+}
+
+/* ===== Submit Button ===== */
+.page-process .submit-box {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.page-process .submit-box button {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #111827;
+    padding: 18px 65px;
+    border-radius: 22px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 25px rgba(201,162,77,.6);
+}
+
+.page-process .submit-box button:hover {
+    transform: scale(1.17);
+    box-shadow: 0 20px 45px rgba(201,162,77,.6);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .page-process .extract-card {
+        padding: 25px;
+    }
+    .page-process .form-grid {
+        gap: 15px;
+    }
+    .page-process .top-actions {
+        justify-content: center;
+    }
+}

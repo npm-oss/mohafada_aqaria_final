@@ -1,0 +1,120 @@
+/* ===== Animation ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Page Background (نحّينا الكحل) ===== */
+.contact-container {
+    min-height: 100vh;
+    background: #f3f4f6; /* رمادي فاتح */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    padding: 40px 15px;
+}
+
+/* ===== Card (كبرناها) ===== */
+.contact-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 850px; /* كارت كبيرة */
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+    overflow: hidden;
+    animation: fadeUp .8s ease;
+}
+
+/* ===== Header ===== */
+.contact-header {
+    background: linear-gradient(90deg, #c9a24d, #e8cf8b);
+    text-align: center;
+    padding: 35px 20px;
+    color: #1f2937;
+}
+
+.contact-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 16px;
+}
+
+/* ===== Form ===== */
+.contact-form {
+    padding: 40px 50px;
+}
+
+/* ===== Inputs ===== */
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #374151;
+    font-size: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #c9a24d;
+    box-shadow: 0 0 15px rgba(201,162,77,.4);
+    transform: scale(1.02);
+}
+
+/* ===== Button ===== */
+.submit-box {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.submit-box button {
+    background: linear-gradient(90deg, #c9a24d, #e8cf8b);
+    color: #1f2937;
+    padding: 16px 70px;
+    border-radius: 18px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.submit-box button:hover {
+    transform: scale(1.12);
+    box-shadow: 0 14px 35px rgba(201,162,77,.6);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-card {
+        max-width: 100%;
+    }
+}

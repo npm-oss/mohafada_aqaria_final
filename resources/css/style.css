@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links li a:hover {
+    opacity: 0.7;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1581093576794-4c605ff9d4a6');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* وسط أفقي */
+    align-items: center;     /* وسط عمودي */
+    padding-top: 80px;       /* باش ما يغطيش navbar */
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    color: white;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #00a8ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: #0077b6;
+}

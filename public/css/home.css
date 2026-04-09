@@ -1,0 +1,478 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: rgba(0, 18, 45, 0.9);
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    overflow: visible; /* مهم للـ dropdown */
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =========================
+   LINKS
+========================= */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    overflow: visible;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* =========================
+   DROPDOWN (طلب شهادة سلبية)
+========================= */
+.dropdown-menu {
+    display: none; /* مخفية افتراضيا */
+    position: absolute;
+    right: 0;
+    top: 130%;
+    background: #ffffff;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    padding: 8px 0;
+    z-index: 9999;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 12px 20px;
+}
+
+.dropdown-menu li a {
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+    background: #f3f4f6;
+}
+
+/* اظهار القائمة عند المرور بالماوس */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("/images/RTRES.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    background:#C9A24D ;
+    padding: 10px 22px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* =========================
+   SERVICES
+========================= */
+#services {
+    padding: 70px 40px;
+    background: #f2f4f7;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    text-align: center;
+    border-top: 4px solid #C9A24D;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none; /* مخفية افتراضيا */
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background: #ffffff;
+            min-width: 220px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            padding: 8px 0;
+            z-index: 999;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+            padding: 10px 18px;
+        }
+
+        .dropdown-menu li a {
+            color: #222;
+            font-weight: 600;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-menu li:hover {
+            background: #f3f4f6;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+.navbar {
+    background: #394B59; /* رمادي فاحم */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+}
+
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Dropdown المستوى الأول */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    min-width: 260px;
+    border-radius: 6px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.15);
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 12px 15px;
+}
+
+.dropdown-menu li a {
+    color: #143d2b;
+    display: block;
+}
+
+/* Dropdown المستوى الثاني */
+.dropdown-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: #f4f6f5;
+    min-width: 240px;
+    border-radius: 6px;
+}
+
+.dropdown-sub:hover .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background: #eef3f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   DROPDOWN عام
+========================= */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 130%;
+    background: #ffffff;
+    min-width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    padding: 8px 0;
+    z-index: 9999;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    color: #00122d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #f2f4f7;
+}
+
+/* =========================
+   SUBMENU (البطاقات)
+========================= */
+.dropdown-sub {
+    position: relative;
+}
+
+.dropdown-submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background: #f9fafb;
+    min-width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.dropdown-submenu a {
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    min-width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 8px 0;
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: #222;
+    font-weight: 600;
+}
+
+.dropdown-menu li a:hover {
+    background: #f3f4f6;
+}
+
+/* SUBMENU */
+.submenu {
+    position: relative;
+}
+
+.submenu-menu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background: #fff;
+    min-width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 8px 0;
+}

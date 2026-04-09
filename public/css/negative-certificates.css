@@ -1,0 +1,58 @@
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: "Cairo", sans-serif;
+}
+
+.admin-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    color: #c9a24d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.certificates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.certificates-table th, .certificates-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.certificates-table th {
+    background-color: #f3f3f3;
+    color: #333;
+    font-weight: bold;
+}
+
+.actions .btn {
+    margin: 2px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-info { background-color: #3b82f6; }
+.btn-success { background-color: #10b981; }
+.btn-danger { background-color: #ef4444; }
+.btn-warning { background-color: #f59e0b; }
+
+.inline-form {
+    display: inline-block;
+    margin: 0;
+}

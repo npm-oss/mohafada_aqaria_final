@@ -1,0 +1,80 @@
+/* ===== Animations ===== */
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Container ===== */
+.page-details .extract-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    font-family: "Cairo", sans-serif;
+    animation: fadeSlide 0.6s ease;
+}
+
+/* ===== Main Card ===== */
+.page-details .extract-card {
+    background: #f4efe3; /* أغمق شوية من السابق */
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 20px 38px rgba(201,162,77,0.32);
+    margin-bottom: 25px;
+}
+
+/* ===== Title ===== */
+.page-details .extract-card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #9c7a1e; /* ذهبي أغمق */
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+/* ===== GRID ===== */
+.page-details .details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* ===== Row Box ===== */
+.page-details .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fdfbf6; /* أغمق شوية */
+    padding: 10px 12px;  /* صغّرنا أكثر */
+    border-radius: 10px;
+    box-shadow: 0 7px 16px rgba(201,162,77,0.25);
+    transition: all 0.25s ease;
+}
+
+.page-details .row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(201,162,77,0.45);
+}
+
+/* ===== Label ===== */
+.page-details .row label {
+    font-weight: 700;
+    color: #4a3b17; /* غامق رسمي */
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* ===== Value ===== */
+.page-details .row span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c1c1c;
+    text-align: right;
+    margin-left: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .page-details .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

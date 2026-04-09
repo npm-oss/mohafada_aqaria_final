@@ -1,0 +1,142 @@
+/* تنسيق صفحة تسجيل الدخول Breeze */
+
+body {
+    background: #f3f4f6;
+    font-family: "Tajawal", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 390px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+}
+
+.login-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #111827;
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: #2563eb;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #1e40af;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.footer-text a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+
+/* تنسيق صفحة إنشاء حساب */
+
+.register-container {
+    width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.register-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #111827;
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: #2563eb;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #16a34a;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: #15803d;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.footer-text a {
+    color: #2563eb;
+    text-decoration: none;
+}
+

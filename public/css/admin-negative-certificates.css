@@ -1,0 +1,138 @@
+/* ===== Animations ===== */
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+    0%   { box-shadow: 0 0 0 rgba(201,162,77,0.4); }
+    50%  { box-shadow: 0 0 25px rgba(201,162,77,0.7); }
+    100% { box-shadow: 0 0 0 rgba(201,162,77,0.4); }
+}
+
+/* ===== Container ===== */
+.extract-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: "Cairo", sans-serif;
+    animation: fadeSlide 0.8s ease;
+}
+
+/* ===== Top Actions Buttons ===== */
+.top-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-actions a,
+.top-actions button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.25s ease;
+}
+
+.btn-process { background: #0d6efd; }
+.btn-process:hover { background: #0b5ed7; transform: translateY(-2px); }
+
+.btn-success { background: #198754; }
+.btn-success:hover { background: #157347; transform: translateY(-2px); }
+
+.btn-danger { background: #dc2626; }
+.btn-danger:hover { background: #b91c1c; transform: translateY(-2px); }
+
+.btn-certificate { background: #6f42c1; }
+.btn-certificate:hover { background: #5a2fa6; transform: translateY(-2px); }
+
+/* ===== Extract Card ===== */
+.extract-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+    animation: fadeSlide 0.8s ease;
+}
+
+.extract-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c9a24d;
+    margin-bottom: 12px;
+}
+
+/* ===== Citizen Form ===== */
+.citizen-info {
+    padding: 15px !important;
+}
+
+.citizen-info .row {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 4px !important;
+}
+
+.citizen-info label {
+    font-weight: bold !important;
+    margin-bottom: 2px !important;
+    color: #374151;
+}
+
+.citizen-info input,
+.citizen-info select {
+    padding: 6px 8px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    background-color: #f9f9f9 !important;
+    color: #111827 !important;
+    transition: all 0.3s ease;
+}
+
+.citizen-info input:focus,
+.citizen-info select:focus {
+    border-color: #c9a24d !important;
+    box-shadow: 0 0 8px rgba(201,162,77,0.3) !important;
+    outline: none !important;
+    transform: scale(1.03) !important;
+}
+
+/* ===== Submit Button ===== */
+.submit-box {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit-box button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: #198754;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-box button:hover {
+    background: #157347;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width:768px) {
+    .row, .citizen-info .row { flex-direction: column !important; align-items: flex-start; }
+    .top-actions { gap:6px; }
+}
